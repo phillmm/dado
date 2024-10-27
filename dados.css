@@ -1,0 +1,92 @@
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: rgb(59, 59, 59);
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    margin-top: 75px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    /*Sombra Nº60 de https://getcssscan.com/css-box-shadow-examples*/
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(59, 59, 59) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(59, 59, 59) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(59, 59, 59) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(59, 59, 59) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+.contenedor {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: tomato;
+}
+
+.exito {
+    color: green;
+    font-weight: 700;
+}
+
+.error {
+    color: red;
+}
+
+.instrucciones,
+.subtitulo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.jugar {
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 0;
+    background-color: rgb(31, 193, 27);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    transition: letter-spacing 0.5s ease, font-size 0.5s ease;
+}
+
+.jugar:hover {
+    background-color: rgb(255, 85, 85);
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-size: 26px;
+}
+
+.resultado {
+    font-size: 25px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    list-style: square;
+}
